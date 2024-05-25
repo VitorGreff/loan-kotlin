@@ -10,6 +10,7 @@ class Customer(
     val age: Int,
     val cpf: String,
     val name: String,
+    @Column(columnDefinition = "money")
     val income: Float,
     val location: String,
     @Id @GeneratedValue(strategy = GenerationType.UUID)
